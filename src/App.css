@@ -1,0 +1,36 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.App__Task {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: .5rem 0;
+    text-decoration: none;
+    color: #2196F3;
+}
+
+.App__Task:hover {
+    color: #1976D2;
+}
+
+.App__Name {
+    font-size: 2rem;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.App__Author {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: .5rem;
+    color: #9E9E9E;
+}
+
+.App__DataPicker {
+    margin-bottom: 2em;
+}

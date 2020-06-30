@@ -1,0 +1,9 @@
+.Stars {
+    color: #FFC107;
+    max-width: 400px;
+}
+
+.Stars__Star {
+    display: inline-block;
+    margin: 0 0.25em;
+}

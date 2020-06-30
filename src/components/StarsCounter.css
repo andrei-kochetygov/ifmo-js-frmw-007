@@ -1,0 +1,20 @@
+.StarsCounter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.StarsCounter__Button {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    padding: 0.75em 1em;
+    border: 0;
+    border-radius: 2px;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.StarsCounter__Button-Icon {
+    margin-right: .5em;
+}
