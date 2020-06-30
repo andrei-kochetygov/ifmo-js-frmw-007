@@ -1,0 +1,52 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: GitHub Pages CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Split GitHub Repository Owner and Name
+        uses: jungwinter/split@v1
+        id: split
+        with:
+          msg: ${{ github.repository }}
+          seperator: '/'
+
+      - name: Build using Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build --if-present
+        env:
+          CI: true
+          PUBLIC_URL: /${{ steps.split.outputs._1 }}
+
+      - name: Set Directory to Deploy
+        run: echo ::set-env name=DIRECTORY_TO_DEPLOY::$((test -d build && echo build) || echo dist)
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ github.token }}
+          BRANCH: gh-pages
+          FOLDER: ${{ env.DIRECTORY_TO_DEPLOY }}
