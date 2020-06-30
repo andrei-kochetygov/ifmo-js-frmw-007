@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ifmo-js-frmw-007/static/css/main.af048857.chunk.css",
+    "main.js": "/ifmo-js-frmw-007/static/js/main.06eb9bc3.chunk.js",
+    "main.js.map": "/ifmo-js-frmw-007/static/js/main.06eb9bc3.chunk.js.map",
+    "runtime-main.js": "/ifmo-js-frmw-007/static/js/runtime-main.1a815a52.js",
+    "runtime-main.js.map": "/ifmo-js-frmw-007/static/js/runtime-main.1a815a52.js.map",
+    "static/js/2.fdfb91be.chunk.js": "/ifmo-js-frmw-007/static/js/2.fdfb91be.chunk.js",
+    "static/js/2.fdfb91be.chunk.js.map": "/ifmo-js-frmw-007/static/js/2.fdfb91be.chunk.js.map",
+    "index.html": "/ifmo-js-frmw-007/index.html",
+    "precache-manifest.3175b233ffdf61e63ac5a7124430eaf6.js": "/ifmo-js-frmw-007/precache-manifest.3175b233ffdf61e63ac5a7124430eaf6.js",
+    "service-worker.js": "/ifmo-js-frmw-007/service-worker.js",
+    "static/css/main.af048857.chunk.css.map": "/ifmo-js-frmw-007/static/css/main.af048857.chunk.css.map",
+    "static/js/2.fdfb91be.chunk.js.LICENSE.txt": "/ifmo-js-frmw-007/static/js/2.fdfb91be.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a815a52.js",
+    "static/js/2.fdfb91be.chunk.js",
+    "static/css/main.af048857.chunk.css",
+    "static/js/main.06eb9bc3.chunk.js"
+  ]
+}
